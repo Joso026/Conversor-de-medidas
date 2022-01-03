@@ -51,9 +51,8 @@ def conversao(num):
         f'O valor de {valor}{unidade} convertido em {unidade_convertida} é igual a {round(num_f, 2)}{unidade_convertida}'
     )
 
-valor = float(input("Qual o valor? "))
-
 while on:
+    valor = float(input("Qual o valor? "))
     unidade = input("Qual a unidade de medida? mm/cm/dm/m/dam/hm/km ")
     unidade_convertida = input(
         "Qual a unidade para conversão? ")
@@ -69,3 +68,12 @@ while on:
 
 manipular(valor)
 
+escolha = input("Deseja converter outro valor? S/N ").capitalize()
+    if escolha == 'S':
+      pass
+    elif escolha == 'N':
+      print("Obrigado por utilizar nossos serviços. Volte Sempre.")
+      on = False
+    else:
+      print("Não foi possível identificar a sua resposta. Volte sempre =) ")
+      on = False

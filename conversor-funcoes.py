@@ -58,7 +58,6 @@ while on:
     unidade_convertida = input(
         "Qual a unidade para conversão? ")
     if unidade in unidades_medida:
-        pass
         if unidade_convertida in unidades_medida:
             on = False
 
